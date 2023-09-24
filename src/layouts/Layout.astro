@@ -6,12 +6,7 @@ interface Props {
 }
 
 let { title } = Astro.props;
-
-if (title === "Home") {
-  title = "Spin Society";
-} else {
-  title = `Spin Society | ${title}`;
-}
+title = title == "Home" ? "Spin Society" : `Spin Society | ${title}`;
 ---
 
 <!doctype html>
