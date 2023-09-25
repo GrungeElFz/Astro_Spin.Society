@@ -18,14 +18,14 @@ title = title == "Home" ? "Spin Society" : `Spin Society | ${title}`;
         if (localStorage.getItem("theme") === null) {
           document.documentElement.setAttribute("data-theme", "black");
         } else
-        document.documentElement.setAttribute(
-          "data-theme",
-          localStorage.getItem("theme")
+          document.documentElement.setAttribute(
+            "data-theme",
+            localStorage.getItem("theme")
           );
-        }
+      }
 
-        setTheme();
-        document.addEventListener('astro:after-swap', setTheme);
+      setTheme();
+      document.addEventListener("astro:after-swap", setTheme);
     </script>
 
     <script>
