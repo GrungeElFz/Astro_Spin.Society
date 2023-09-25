@@ -35,7 +35,9 @@ title = title == "Home" ? "Spin Society" : `Spin Society | ${title}`;
   </head>
   <body>
     <NavBar />
-    <slot />
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
 <style is:global>
@@ -54,6 +56,14 @@ title = title == "Home" ? "Spin Society" : `Spin Society | ${title}`;
     font-family: system-ui, sans-serif;
     background: #13151a;
     background-size: 224px;
+  }
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    font-size: 20px;
+    line-height: 1.6;
   }
   code {
     font-family:
