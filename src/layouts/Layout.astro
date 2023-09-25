@@ -14,13 +14,18 @@ title = title == "Home" ? "Spin Society" : `Spin Society | ${title}`;
 <html lang="en" data-theme="dark">
   <head>
     <script is:inline>
-      if (localStorage.getItem("theme") === null) {
-        document.documentElement.setAttribute("data-theme", "black");
-      } else
+      function setTheme() {
+        if (localStorage.getItem("theme") === null) {
+          document.documentElement.setAttribute("data-theme", "black");
+        } else
         document.documentElement.setAttribute(
           "data-theme",
           localStorage.getItem("theme")
-        );
+          );
+        }
+
+        setTheme();
+        document.addEventListener('astro:after-swap', setTheme);
     </script>
 
     <script>
