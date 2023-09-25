@@ -21,6 +21,7 @@ title = title == "Home" ? "Spin Society" : `Spin Society | ${title}`;
           localStorage.getItem("theme")
         );
     </script>
+
     <script>
       import { themeChange } from "theme-change";
       themeChange();
@@ -33,6 +34,7 @@ title = title == "Home" ? "Spin Society" : `Spin Society | ${title}`;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
+
   <body>
     <NavBar />
     <main>
@@ -40,6 +42,7 @@ title = title == "Home" ? "Spin Society" : `Spin Society | ${title}`;
     </main>
   </body>
 </html>
+
 <style is:global>
   :root {
     --accent: 136, 58, 234;
