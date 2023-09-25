@@ -3,13 +3,22 @@ interface Props {
   title: string;
   body: string;
   href: string;
+	newTab?: boolean;
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, body, newTab } = Astro.props;
+
+let linkAttributes = {};
+if (newTab) {
+  linkAttributes = {
+    target: "_blank",
+    rel: "noopener noreferrer"
+  };
+}
 ---
 
 <li class="link-card">
-  <a href={href}>
+  <a href={href} {...linkAttributes}>
     <h2 class="font-semibold">
       <span>•</span>
        &nbsp;{title}&nbsp;
