@@ -3,7 +3,7 @@ interface Props {
   title: string;
   body: string;
   href: string;
-	newTab?: boolean;
+  newTab?: boolean;
 }
 
 const { href, title, body, newTab } = Astro.props;
@@ -12,7 +12,7 @@ let linkAttributes = {};
 if (newTab) {
   linkAttributes = {
     target: "_blank",
-    rel: "noopener noreferrer"
+    rel: "noopener noreferrer",
   };
 }
 ---
