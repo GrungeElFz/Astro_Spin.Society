@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+import Flyer_SpinSociety_SolCycle from "../assets/Flyer_SpinSociety_SolCycle.png";
 ---
 
 <Layout title="Events">
@@ -8,4 +9,24 @@ import Hero from "../components/Hero.astro";
     title="Spin Society"
     body="Stay updated with our latest events, gatherings, and event logs. Join us and be a part of the experience."
   />
+
+  <div class="hero max-h-screen bg-base-200">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <img
+        src={Flyer_SpinSociety_SolCycle.src}
+        alt="Spin Society's Sol Cycle Flyer"
+        width="550"
+        class="rounded-lg shadow-2xl lg:ml-20"
+      />
+
+      <div>
+        <h1 class="text-5xl font-bold mt-5 mb-10">Sitrus Sol x Spin Socety</h1>
+        <p><span>Location:&nbsp;</span>Sitrus House</p>
+        <p><span>Date:&nbsp;</span>October 7, 2023</p>
+        <p><span>Time:&nbsp;</span>20:00</p>
+
+        <button class="btn btn-primary mt-10">Instagram</button>
+      </div>
+    </div>
+  </div>
 </Layout>
