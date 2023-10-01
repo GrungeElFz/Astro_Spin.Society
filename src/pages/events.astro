@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Flyer_SpinSociety_SolCycle from "../assets/Flyer_SpinSociety_SolCycle.png";
+import Flyer_SpinSociety_SpinCycleVol1 from "../assets/Flyer_SpinSociety_SpinCycleVol1.png";
 ---
 
 <Layout title="Events">
@@ -47,6 +48,40 @@ import Flyer_SpinSociety_SolCycle from "../assets/Flyer_SpinSociety_SolCycle.png
               rel="noopener noreferrer"
             >
               @sitrussol
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero max-h-screen bg-base-200">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <img
+        src={Flyer_SpinSociety_SpinCycleVol1.src}
+        alt="Spin Society's Sol Cycle Flyer"
+        width="550"
+        class="rounded-lg shadow-2xl lg:ml-20"
+      />
+
+      <div>
+        <div class="badge badge-outline">PAST EVENT</div>
+        <h1 class="text-4xl font-semibold mt-5">
+          Spin Socety Presents :
+        </h1>
+        <h1 class="text-7xl font-bold mt-5 mb-10">Spin Cycle Vol. 1</h1>
+        <p><span>Location:&nbsp;</span>TBA</p>
+        <p><span>Date:&nbsp;</span>September 7, 2023</p>
+        <p><span>Time:&nbsp;</span>20:30 - 01:30</p>
+
+        <div class="flex gap-3 mt-10">
+          <button class="btn btn-primary bg-primary mt-10">
+            <a
+              href="https://www.instagram.com/spinsocietycu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @spinsocietycu
             </a>
           </button>
         </div>
